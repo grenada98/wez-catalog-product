@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <!--
+            ДЛЯ ПОЛОСЫ ПРОКРУТКИ НИЖЕ
+        -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+        />
+        <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+        
+        <link rel="stylesheet" href="css/style.min.css">
+        <title>MyProject</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-container">
+                <div class="header-top">
+                    <a class="logo" href="#">
+                        <img alt="alt" src="img/wezom_logo_1.svg">
+                    </a>
+                    <div class="header-navigation">
+                        <nav class="header-menu">
+                            <ul class="header-menu-list">
+                                <li class="header-menu-link">
+                                    <a class="header-menu-link-a">О Компании</a>
+                                </li>
+                                <li class="header-menu-link">
+                                    <a class="header-menu-link-a">Политика конфиденциальности</a>
+                                </li>
+                                <li class="header-menu-link">
+                                    <a class="header-menu-link-a">Доставка и оплата</a>
+                                </li>
+                                <li class="header-menu-link">
+                                    <a class="header-menu-link-a">Гарантия</a>
+                                    </li>
+                            </ul>
+                        </nav>
+                        <a class="tel-number" href="tel:+380680000000">+38 068 000 00 00</a>
+                    </div>
+                    <div class="localization-enter">
+                        <ul class="header-menu-localization">
+                            <li class="localization">
+                                <a class="localization-lang" href="#">Ua</a>
+                            </li>
+                            <li class="localization">
+                                <a class="localization-lang" href="#">Ru</a>
+                            </li>
+                        </ul>
+                        <a class="enter-link" href="#">
+                            <span class="enter-span">Войти</span>
+                            <svg class="icon-enter">
+                                <use xlink:href="img/icons/icons.svg#enter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <div class="mobile-catalog-div">
+                        <div class="burger">
+                            <div class="burger-middle-line"></div>
+                        </div>
+                    </div>
+                    <div class="header-categories">
+                        <div class="icon-catalog-div">
+                            <svg class="icon-select-categories">
+                                <use xlink:href="img/icons/icons.svg#select-categories"></use>
+                            </svg>
+                            <span class="select-catalog">каталог</span>
+                        </div>
+                        <span class="categories-span">Все категории</span>
+                        <div class="out-header-submenu-list">
+                            <ul class="header-submenu-list">
+                                <li class="header-submenu-link">
+                                    <a class="header-submenu-link-a">
+                                        <img alt="alt" src="img/power-1.png">
+                                        <span class="catalog-item">Турбины</span>
+                                    </a>
+                                </li>
+                                <li class="header-submenu-link">
+                                    <a class="header-submenu-link-a">
+                                        <img alt="alt" src="img/cartridge.png">
+                                        <span class="catalog-item">Картриджи</span>
+                                    </a>
+                                </li>
+                                <li class="header-submenu-link">
+                                    <a class="header-submenu-link-a">
+                                        <img alt="alt" src="img/geometry.png">
+                                        <span class="catalog-item">Геометрии</span>
+                                    </a>
+                                </li>
+                                <li class="header-submenu-link">
+                                    <a class="header-submenu-link-a">
+                                        <img alt="alt" src="img/aktuator.png">
+                                        <span class="catalog-item">Актуаторы</span>
+                                    </a>
+                                </li>
+                                <li class="header-submenu-link">
+                                    <a class="header-submenu-link-a">
+                                        <img alt="alt" src="img/servoprivod.png">
+                                        <span class="catalog-item">Сервоприводы</span>
+                                    </a>
+                                </li>
+                                <li class="header-submenu-link">
+                                    <a class="header-submenu-link-a">
+                                        <img alt="alt" src="img/prokladki.png">
+                                        <span class="catalog-item">Прокладки</span>
+                                    </a>
+                                </li>
+                                <li class="header-submenu-link">
+                                    <a class="header-submenu-link-a">
+                                        <img alt="alt" src="img/zap4asti.png">
+                                        <span class="catalog-item">Прочие запчасти</span>
+                                    </a>
+                                </li>
+                                <li class="header-submenu-link">
+                                    <a class="header-submenu-link-a">
+                                        <img alt="alt" src="img/aktuator-1.png">
+                                        <span class="catalog-item">Электронновакуумные актуаторы</span>
+                                    </a>
+                                </li>
+                                <li class="header-submenu-link">
+                                    <a class="header-submenu-link-a">
+                                        <img alt="alt" src="img/body-tourbine.png">
+                                        <span class="catalog-item">Корпуса турбины</span>
+                                    </a>
+                                </li>
+                                <li class="header-submenu-link">
+                                    <a class="header-submenu-link-a">
+                                        <img alt="alt" src="img/zap4asti-1.png">
+                                        <span class="catalog-item">Запчасти для сервопривода</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="input-search">
+                        <input class="input-search-area" name="textfield" type="text" placeholder="Поиск, например турбина" size="80">
+                        <button class="input-button">
+                            <svg class="icon-search">
+                                <use xlink:href="img/icons/icons.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="equal-like-basket">
+                        <div class="equal-like-basket-in">
+                            <a class="a-equal-like-basket" href="#">
+                                <svg class="icon-libra">
+                                    <use xlink:href="img/icons/icons.svg#libra"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="equal-like-basket-in">
+                            <a class="a-equal-like-basket" href="#">
+                                <svg class="icon-like">
+                                    <use xlink:href="img/icons/icons.svg#like"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="equal-like-basket-in" id="open-basket-popup">
+                            <a class="a-equal-like-basket" href="#">
+                                <svg class="icon-cart">
+                                    <use xlink:href="img/icons/icons.svg#cart"></use>
+                                </svg>
+                            </a>
+                            <div class="basket-count" id="basket-count-id" value="0">3</div>
+                            <div class="basket-submenu-out">
+                                <div class="basket-submenu-wrapper">
+                                    <div class="basket-submenu-in">
+                                        <p>В корзине 
+                                            <span class="basket-submenu-in-count-of-products">3 товара</span>
+                                        </p>
+                                        <p>На сумму 
+                                            <span class="basket-submenu-in-total-price">30 000 ₴</span>
+                                        </p>
+                                        <a class="checkout" href="#">
+                                            <span class="checkout-span"> Оформить заказ</span>
+                                            <svg class="icon-cart">
+                                                <use xlink:href="img/icons/icons.svg#cart"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="checkout-edit" href="#">
+                                            <span class="checkout-edit-span">Редактировать заказ</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="enter-link" href="#" id="mobile-enter-a">
+                            <svg class="icon-mobile-enter">
+                                <use xlink:href="img/icons/icons.svg#mobile-enter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-catalog">
+            <div class="main-catalog-wrapper">
+                <div class="main-catalog-title">
+                    <span class="route-path-span">Test - Каталог - Запчасти</span>
+                    <span class="zapchasti-span">Запчасти</span>
+                </div>
+                <div class="main-catalog-content">
+                    <div class="catalog-option-div">
+                        <form>
+                            <div class="option-of-catalog">
+                                <button class="option-title-button" name="1" type="button">Бренд</button>
+                                <div class="options-div">
+                                    <div class="checkbox">
+                                        Jone
+                                        <input class="option-checkbox" type="checkbox">
+                                    </div>
+                                    <div class="checkbox">
+                                        Turbo
+                                        <input class="option-checkbox" type="checkbox">
+                                    </div>
+                                    <div class="checkbox">
+                                        E & E
+                                        <input class="option-checkbox" type="checkbox">
+                                    </div>
+                                    <div class="checkbox">
+                                        Garret
+                                        <input class="option-checkbox" type="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option-of-catalog">
+                                <button class="option-title-button" name="2" type="button">Модель</button>
+                                <div class="options-div">
+                                    <select>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="option-of-catalog">
+                                <button class="option-title-button" name="3" type="button">Год выпуска</button>
+                                <div class="options-div">
+                                    <select>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="option-of-catalog">
+                                <button class="option-title-button" name="4" type="button">Цена</button>
+                                <div class="options-div-price">
+                                    <div class="option-variable-price">
+                                        <input class="option-input-place" id="input-price-min" type="text" >
+                                    </div>
+                                    <div class="option-variable-price">
+                                        <input class="option-input-place" id="input-price-max" type="text">
+                                    </div>
+                                    <button class="button-submit-options" name="5" type="button">Ок</button>
+                                </div>
+                                <div class="input-range-field">
+                                    <input id="inputSlidTwoTags" type="range" min="0" max="100" step="1" value="50">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="catalog-price-weapon-div">
+                        <div class="sort-show-catalog">
+                            <button class="filter-option-catalog-button" data-name="filtr" type="button">Фильтр
+                                <svg class="icon-filtr">
+                                    <use xlink:href="img/icons/icons.svg#filtr"></use>
+                                </svg>
+                            </button>
+                            <button class="filter-option-catalog-button" data-name="sort" type="button">Сортировать
+                                <svg class="icon-sort-list">
+                                    <use xlink:href="img/icons/icons.svg#sort-list"></use>
+                                </svg>
+                            </button>
+                            <div class="sort-catalog">
+                                <span>Сортировать</span>
+                                <select>
+                                    <option>По названию от А до Я</option>
+                                    <option>По названию от Я до А</option>
+                                    <option>От дешевых к дорогим</option>
+                                    <option>От дорогих к дешевым</option>
+                                </select>
+                            </div>
+                            <div class="sort-catalog">
+                                <span>Товаров на странице</span>
+                                <select>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="catalog-div catalog-page">
+                            <ul class="list-of-weapons catalog-page">
+                                <li class="weapon catalog-page">
+                                    <span class="news-span">Новинка</span>
+                                    <div class="weapon-details">
+                                        <img alt="alt" class="weapon-details-img" src="img/Rectangle-149.png">
+                                        <div class="weapon-icons">
+                                            <svg class="icon-like-weapon">
+                                                <use xlink:href="img/icons/icons.svg#like-weapon"></use>
+                                            </svg>
+                                            <svg class="icon-libra-weapon">
+                                                <use xlink:href="img/icons/icons.svg#libra-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-play-weapon">
+                                                <use xlink:href="img/icons/icons.svg#play-weapon" ></use>
+                                            </svg>
+                                        </div>
+                                        <div class="description-of-weapon">
+                                            <img alt="alt" class="img-gift" src="img/gift-box.png">
+                                            <span class="name-of-weapon">Ружье Mossberg 590M Mag-Fed</span>
+                                            <div class="star-rating">
+                                                <div class="vote-feedback" data-feedback="3">
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="5" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="4" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="3" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="2" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="1" src="img/star.svg"></div>
+                                                </div>
+                                                <a class="number-of-feedback-product">10 отзывов</a>
+                                            </div>
+                                            <div class="price-buy">
+                                                <div class="price">
+                                                    <span class="old-price">2509</span>
+                                                    <span class="new-price">27 632.65₴</span>
+                                                </div>
+                                                <div class="buy">
+                                                    <svg class="icon-buy-weapon">
+                                                        <use xlink:href="img/icons/icons.svg#buy-weapon" ></use>
+                                                    </svg>
+                                                    <span class="buy-span">Купить</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weapon catalog-page">
+                                    <span class="news-span">Новинка</span>
+                                    <div class="weapon-details">
+                                        <img alt="alt" class="weapon-details-img" src="img/Rectangle-149.png">
+                                        <div class="weapon-icons">
+                                            <svg class="icon-like-weapon">
+                                                <use xlink:href="img/icons/icons.svg#like-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-libra-weapon">
+                                                <use xlink:href="img/icons/icons.svg#libra-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-play-weapon">
+                                                <use xlink:href="img/icons/icons.svg#play-weapon" ></use>
+                                            </svg>
+                                        </div>
+                                        <div class="description-of-weapon">
+                                            <img alt="alt" class="img-gift" src="img/gift-box.png">
+                                            <span class="name-of-weapon">Ружье Mossberg 590M Mag-Fed</span>
+                                            <div class="star-rating">
+                                                <div class="vote-feedback" data-feedback="3">
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="5" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="4" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="3" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="2" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="1" src="img/star.svg"></div>
+                                                </div>
+                                                <a class="number-of-feedback-product">10 отзывов</a>
+                                            </div>
+                                            <div class="price-buy">
+                                                <div class="price">
+                                                    <span class="old-price">2509</span>
+                                                    <span class="new-price">27 632.65₴</span>
+                                                </div>
+                                                <div class="buy">
+                                                    <svg class="icon-buy-weapon">
+                                                        <use xlink:href="img/icons/icons.svg#buy-weapon" ></use>
+                                                    </svg>
+                                                    <span class="buy-span">Купить</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weapon catalog-page">
+                                    <span class="news-span">Новинка</span>
+                                    <div class="weapon-details">
+                                        <img alt="alt" class="weapon-details-img" src="img/Rectangle-149.png">
+                                        <div class="weapon-icons">
+                                            <svg class="icon-like-weapon">
+                                                <use xlink:href="img/icons/icons.svg#like-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-libra-weapon">
+                                                <use xlink:href="img/icons/icons.svg#libra-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-play-weapon">
+                                                <use xlink:href="img/icons/icons.svg#play-weapon" ></use>
+                                            </svg>
+                                        </div>
+                                        <div class="description-of-weapon">
+                                            <img alt="alt" class="img-gift" src="img/gift-box.png">
+                                            <span class="name-of-weapon">Ружье Mossberg 590M Mag-Fed</span>
+                                            <div class="star-rating">
+                                                <div class="vote-feedback" data-feedback="3">
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="5" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="4" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="3" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="2" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="1" src="img/star.svg"></div>
+                                                </div>
+                                                <a class="number-of-feedback-product">10 отзывов</a>
+                                            </div>
+                                            <div class="price-buy">
+                                                <div class="price">
+                                                    <span class="old-price">2509</span>
+                                                    <span class="new-price">27 632.65₴</span>
+                                                </div>
+                                                <div class="buy">
+                                                    <svg class="icon-buy-weapon">
+                                                        <use xlink:href="img/icons/icons.svg#buy-weapon" ></use>
+                                                    </svg>
+                                                    <span class="buy-span">Купить</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weapon catalog-page">
+                                    <span class="news-span">Новинка</span>
+                                    <div class="weapon-details">
+                                        <img alt="alt" class="weapon-details-img" src="img/Rectangle-149.png">
+                                        <div class="weapon-icons">
+                                            <svg class="icon-like-weapon">
+                                                <use xlink:href="img/icons/icons.svg#like-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-libra-weapon">
+                                                <use xlink:href="img/icons/icons.svg#libra-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-play-weapon">
+                                                <use xlink:href="img/icons/icons.svg#play-weapon" ></use>
+                                            </svg>
+                                        </div>
+                                        <div class="description-of-weapon">
+                                            <img alt="alt" class="img-gift" src="img/gift-box.png">
+                                            <span class="name-of-weapon">Ружье Mossberg 590M Mag-Fed</span>
+                                            <div class="star-rating">
+                                                <div class="vote-feedback" data-feedback="3">
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="5" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="4" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="3" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="2" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="1" src="img/star.svg"></div>
+                                                </div>
+                                                <a class="number-of-feedback-product">10 отзывов</a>
+                                            </div>
+                                            <div class="price-buy">
+                                                <div class="price">
+                                                    <span class="old-price">2509</span>
+                                                    <span class="new-price">27 632.65₴</span>
+                                                </div>
+                                                <div class="buy">
+                                                    <svg class="icon-buy-weapon">
+                                                        <use xlink:href="img/icons/icons.svg#buy-weapon" ></use>
+                                                    </svg>
+                                                    <span class="buy-span">Купить</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weapon catalog-page">
+                                    <span class="news-span">Новинка</span>
+                                    <div class="weapon-details">
+                                        <img alt="alt" class="weapon-details-img" src="img/Rectangle-149.png">
+                                        <div class="weapon-icons">
+                                            <svg class="icon-like-weapon">
+                                                <use xlink:href="img/icons/icons.svg#like-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-libra-weapon">
+                                                <use xlink:href="img/icons/icons.svg#libra-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-play-weapon">
+                                                <use xlink:href="img/icons/icons.svg#play-weapon" ></use>
+                                            </svg>
+                                        </div>
+                                        <div class="description-of-weapon">
+                                            <img alt="alt" class="img-gift" src="img/gift-box.png">
+                                            <span class="name-of-weapon">Ружье Mossberg 590M Mag-Fed</span>
+                                            <div class="star-rating">
+                                                <div class="vote-feedback" data-feedback="3">
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="5" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="4" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="3" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="2" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="1" src="img/star.svg"></div>
+                                                </div>
+                                                <a class="number-of-feedback-product">10 отзывов</a>
+                                            </div>
+                                            <div class="price-buy">
+                                                <div class="price">
+                                                    <span class="old-price">2509</span>
+                                                    <span class="new-price">27 632.65₴</span>
+                                                </div>
+                                                <div class="buy">
+                                                    <svg class="icon-buy-weapon">
+                                                        <use xlink:href="img/icons/icons.svg#buy-weapon" ></use>
+                                                    </svg>
+                                                    <span class="buy-span">Купить</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weapon catalog-page">
+                                    <span class="news-span">Новинка</span>
+                                    <div class="weapon-details">
+                                        <img alt="alt" class="weapon-details-img" src="img/Rectangle-149.png">
+                                        <div class="weapon-icons">
+                                            <svg class="icon-like-weapon">
+                                                <use xlink:href="img/icons/icons.svg#like-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-libra-weapon">
+                                                <use xlink:href="img/icons/icons.svg#libra-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-play-weapon">
+                                                <use xlink:href="img/icons/icons.svg#play-weapon" ></use>
+                                            </svg>
+                                        </div>
+                                        <div class="description-of-weapon">
+                                            <img alt="alt" class="img-gift" src="img/gift-box.png">
+                                            <span class="name-of-weapon">Ружье Mossberg 590M Mag-Fed</span>
+                                            <div class="star-rating">
+                                                <div class="vote-feedback" data-feedback="3">
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="5" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="4" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="3" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="2" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="1" src="img/star.svg"></div>
+                                                </div>
+                                                <a class="number-of-feedback-product">10 отзывов</a>
+                                            </div>
+                                            <div class="price-buy">
+                                                <div class="price">
+                                                    <span class="old-price">2509</span>
+                                                    <span class="new-price">27 632.65₴</span>
+                                                </div>
+                                                <div class="buy">
+                                                    <svg class="icon-buy-weapon">
+                                                        <use xlink:href="img/icons/icons.svg#buy-weapon" ></use>
+                                                    </svg>
+                                                    <span class="buy-span">Купить</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weapon catalog-page">
+                                    <span class="news-span">Новинка</span>
+                                    <div class="weapon-details">
+                                        <img alt="alt" class="weapon-details-img" src="img/Rectangle-149.png">
+                                        <div class="weapon-icons">
+                                            <svg class="icon-like-weapon">
+                                                <use xlink:href="img/icons/icons.svg#like-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-libra-weapon">
+                                                <use xlink:href="img/icons/icons.svg#libra-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-play-weapon">
+                                                <use xlink:href="img/icons/icons.svg#play-weapon" ></use>
+                                            </svg>
+                                        </div>
+                                        <div class="description-of-weapon">
+                                            <img alt="alt" class="img-gift" src="img/gift-box.png">
+                                            <span class="name-of-weapon">Ружье Mossberg 590M Mag-Fed</span>
+                                            <div class="star-rating">
+                                                <div class="vote-feedback" data-feedback="3">
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="5" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="4" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="3" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="2" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="1" src="img/star.svg"></div>
+                                                </div>
+                                                <a class="number-of-feedback-product">10 отзывов</a>
+                                            </div>
+                                            <div class="price-buy">
+                                                <div class="price">
+                                                    <span class="old-price">2509</span>
+                                                    <span class="new-price">27 632.65₴</span>
+                                                </div>
+                                                <div class="buy">
+                                                    <svg class="icon-buy-weapon">
+                                                        <use xlink:href="img/icons/icons.svg#buy-weapon" ></use>
+                                                    </svg>
+                                                    <span class="buy-span">Купить</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weapon catalog-page">
+                                    <span class="news-span">Новинка</span>
+                                    <div class="weapon-details">
+                                        <img alt="alt" class="weapon-details-img" src="img/Rectangle-149.png">
+                                        <div class="weapon-icons">
+                                            <svg class="icon-like-weapon">
+                                                <use xlink:href="img/icons/icons.svg#like-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-libra-weapon">
+                                                <use xlink:href="img/icons/icons.svg#libra-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-play-weapon">
+                                                <use xlink:href="img/icons/icons.svg#play-weapon" ></use>
+                                            </svg>
+                                        </div>
+                                        <div class="description-of-weapon">
+                                            <img alt="alt" class="img-gift" src="img/gift-box.png">
+                                            <span class="name-of-weapon">Ружье Mossberg 590M Mag-Fed</span>
+                                            <div class="star-rating">
+                                                <div class="vote-feedback" data-feedback="3">
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="5" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="4" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="3" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="2" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="1" src="img/star.svg"></div>
+                                                </div>
+                                                <a class="number-of-feedback-product">10 отзывов</a>
+                                            </div>
+                                            <div class="price-buy">
+                                                <div class="price">
+                                                    <span class="old-price">2509</span>
+                                                    <span class="new-price">27 632.65₴</span>
+                                                </div>
+                                                <div class="buy">
+                                                    <svg class="icon-buy-weapon">
+                                                        <use xlink:href="img/icons/icons.svg#buy-weapon" ></use>
+                                                    </svg>
+                                                    <span class="buy-span">Купить</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weapon catalog-page">
+                                    <span class="news-span">Новинка</span>
+                                    <div class="weapon-details">
+                                        <img alt="alt" class="weapon-details-img" src="img/Rectangle-149.png">
+                                        <div class="weapon-icons">
+                                            <svg class="icon-like-weapon">
+                                                <use xlink:href="img/icons/icons.svg#like-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-libra-weapon">
+                                                <use xlink:href="img/icons/icons.svg#libra-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-play-weapon">
+                                                <use xlink:href="img/icons/icons.svg#play-weapon" ></use>
+                                            </svg>
+                                        </div>
+                                        <div class="description-of-weapon">
+                                            <img alt="alt" class="img-gift" src="img/gift-box.png">
+                                            <span class="name-of-weapon">Ружье Mossberg 590M Mag-Fed</span>
+                                            <div class="star-rating">
+                                                <div class="vote-feedback" data-feedback="3">
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="5" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="4" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="3" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="2" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="1" src="img/star.svg"></div>
+                                                </div>
+                                                <a class="number-of-feedback-product">10 отзывов</a>
+                                            </div>
+                                            <div class="price-buy">
+                                                <div class="price">
+                                                    <span class="old-price">2509</span>
+                                                    <span class="new-price">27 632.65₴</span>
+                                                </div>
+                                                <div class="buy">
+                                                    <svg class="icon-buy-weapon">
+                                                        <use xlink:href="img/icons/icons.svg#buy-weapon" ></use>
+                                                    </svg>
+                                                    <span class="buy-span">Купить</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="weapon catalog-page">
+                                    <span class="news-span">Новинка</span>
+                                    <div class="weapon-details">
+                                        <img alt="alt" class="weapon-details-img" src="img/Rectangle-149.png">
+                                        <div class="weapon-icons">
+                                            <svg class="icon-like-weapon">
+                                                <use xlink:href="img/icons/icons.svg#like-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-libra-weapon">
+                                                <use xlink:href="img/icons/icons.svg#libra-weapon" ></use>
+                                            </svg>
+                                            <svg class="icon-play-weapon">
+                                                <use xlink:href="img/icons/icons.svg#play-weapon" ></use>
+                                            </svg>
+                                        </div>
+                                        <div class="description-of-weapon">
+                                            <img alt="alt" class="img-gift" src="img/gift-box.png">
+                                            <span class="name-of-weapon">Ружье Mossberg 590M Mag-Fed</span>
+                                            <div class="star-rating">
+                                                <div class="vote-feedback" data-feedback="3">
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="5" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="4" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="3" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="2" src="img/star.svg"></div>
+                                                    <div class="rating-star-f"><img alt="alt" class="star-feedback" data-item-value-f="1" src="img/star.svg"></div>
+                                                </div>
+                                                <a class="number-of-feedback-product">10 отзывов</a>
+                                            </div>
+                                            <div class="price-buy">
+                                                <div class="price">
+                                                    <span class="old-price">2509</span>
+                                                    <span class="new-price">27 632.65₴</span>
+                                                </div>
+                                                <div class="buy">
+                                                    <svg class="icon-buy-weapon">
+                                                        <use xlink:href="img/icons/icons.svg#buy-weapon" ></use>
+                                                    </svg>
+                                                    <span class="buy-span">Купить</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pagination">
+                            <a class="pagination-active">1</a>
+                            <a>2</a>
+                            <a>3</a>
+                            <a>4</a>
+                            <a>5</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer">
+                <div class="footer-menu">
+                    <div class="footer-menu-1">
+                        <a class="logo-wez" href="#">
+                            <img alt="alt" src="img/wezom_logo_1.svg">
+                        </a>
+                        <div class="social-menu">
+                            <a class="a-img-social-menu" href="#">
+                                <svg class="icon-insta">
+                                    <use xlink:href="img/icons/icons.svg#insta"></use>
+                                </svg>
+                            </a>
+                            <a class="a-img-social-menu" href="#">
+                                <svg class="icon-fb">
+                                    <use xlink:href="img/icons/icons.svg#fb"></use>
+                                </svg>
+                            </a>
+                            <a class="a-img-social-menu" href="#">
+                                <svg class="icon-twit">
+                                    <use xlink:href="img/icons/icons.svg#twit"></use>
+                                </svg>
+                            </a>
+                            <a class="a-img-social-menu" href="#">
+                                <svg class="icon-youtube">
+                                    <use xlink:href="img/icons/icons.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="delivery-payment">
+                            <a href="#">
+                                <img alt="alt" src="img/Nova_Poshta_2014_logo_1.svg">
+                            </a>
+                            <div class="payment-div">
+                                <a class="img-payment-div" href="#">
+                                    <img alt="alt" src="img/image_6.svg">
+                                </a>
+                                <a class="img-payment-div" href="#">
+                                    <img alt="alt" src="img/image_8.svg">
+                                </a>
+                                <a class="img-payment-div" href="#">
+                                    <img alt="alt" src="img/image_7.svg">
+                                </a>
+                                <a class="img-payment-div" href="#">
+                                    <img alt="alt" src="img/image_5.svg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-menu-2">
+                        <div class="group-footer-menu-2">
+                            <span class="span-footer-menu">Группа 1</span>
+                            <ul class="ul-footer-group">
+                                <li class="li-footer-group">
+                                    <a class="a-li-footer-group" href="#">Ноутбуки
+                                    </a>
+                                </li>
+                                <li class="li-footer-group">
+                                    <a class="a-li-footer-group" href="#">Планшеты
+                                    </a>
+                                </li>
+                                <li class="li-footer-group">
+                                    <a class="a-li-footer-group" href="#">Аксессуары для планшетов и <br>электронных книг
+                                    </a>
+                                </li>
+                                <li class="li-footer-group">
+                                    <a class="a-li-footer-group" href="#">Кабели и переходники
+                                    </a>
+                                </li>
+                                <li class="li-footer-group">
+                                    <a class="a-li-footer-group" href="#">Сумки для ноутбуков
+                                    </a>
+                                </li>
+                                <li class="li-footer-group">
+                                    <a class="a-li-footer-group" href="#">Автотовары
+                                    </a>
+                                </li>
+                                <li class="li-footer-group">
+                                    <a class="a-li-footer-group" href="#">Сантехника
+                                    </a>
+                                </li>
+                                <li class="li-footer-group">
+                                    <a class="a-li-footer-group" href="#">Ремонт
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group-footer-menu-2">
+                            <span class="span-footer-menu">Группа 2</span>
+                            <ul class="ul-footer-group">
+                                <li class="li-footer-group">
+                                    <a class="a-li-footer-group" href="#">Политика конфиденциальности
+                                    </a>
+                                </li>
+                                <li class="li-footer-group">
+                                    <a class="a-li-footer-group" href="#">Доставка и оплата
+                                    </a>
+                                </li>
+                                <li class="li-footer-group">
+                                    <a class="a-li-footer-group" href="#">Способы оплаты
+                                    </a>
+                                </li>
+                                <li class="li-footer-group">
+                                    <a class="a-li-footer-group" href="#">Гарантия
+                                    </a>
+                                </li>
+                                <li class="li-footer-group">
+                                    <a class="a-li-footer-group" href="#">Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="feedback-numbers">
+                        <span class="span-feedback-numbers">Горячая линия</span>
+                        <a class="num-1-feedback" href="#">0 800 000 000</a>
+                        <div class="list-num-feedback">
+                            <a class="num-2-feedback" href="#">+38 068 000 00 00</a>
+                            <a class="num-2-feedback" href="#">+38 099 000 00 00</a>
+                            <a class="num-2-feedback" href="#">+38 096 000 00 00</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-end">
+                    <span class="span-footer-end">2021 © Wezom Practice</span>
+                    <span class="span-footer-end">Разработка \\ Wezom</span>
+                </div>
+            </div>
+        </div>
+        <div class="to-top">
+        </div>
+        <div class="main-disabled">
+            <div class="mobile-menu-header">
+                <div class="mobile-menu-header-part-1">
+                    <div class="logo-localization">
+                        <a class="logo" href="#">
+                            <img alt="alt" src="img/wezom_logo_1.svg">
+                        </a>
+                        <ul class="header-menu-localization">
+                            <li class="localization">
+                                <a class="localization-lang" href="#">Ua</a>
+                            </li>
+                            <li class="localization">
+                                <a class="localization-lang" href="#">Ru</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu-category">
+                        <div class="mobile-header-submenu-case" data-name="menu">
+                            <div class="mobile-menu-back-button"  data-name="menu">Назад</div>
+                            <ul class="mobile-header-submenu-list">
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">О Компании</a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">Политика конфиденциальности</a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">Доставка и оплата</a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">Гарантия</a>
+                                    </li>
+                            </ul>
+                        </div>
+                        <div class="mobile-header-submenu-case" data-name="catalog">
+                            <div class="mobile-menu-back-button" data-name="catalog">Назад</div>
+                            <ul class="mobile-header-submenu-list">
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">
+                                        <span class="catalog-item">Перейти в каталог</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">
+                                        <img alt="alt" src="img/power-1.png">
+                                        <span class="catalog-item">Турбины</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">
+                                        <img alt="alt" src="img/cartridge.png">
+                                        <span class="catalog-item">Картриджи</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">
+                                        <img alt="alt" src="img/geometry.png">
+                                        <span class="catalog-item">Геометрии</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">
+                                        <img alt="alt" src="img/aktuator.png">
+                                        <span class="catalog-item">Актуаторы</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">
+                                        <img alt="alt" src="img/servoprivod.png">
+                                        <span class="catalog-item">Сервоприводы</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">
+                                        <img alt="alt" src="img/prokladki.png">
+                                        <span class="catalog-item">Прокладки</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">
+                                        <img alt="alt" src="img/zap4asti.png">
+                                        <span class="catalog-item">Прочие запчасти</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">
+                                        <img alt="alt" src="img/aktuator-1.png">
+                                        <span class="catalog-item">Электронновакуумные актуаторы</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">
+                                        <img alt="alt" src="img/body-tourbine.png">
+                                        <span class="catalog-item">Корпуса турбины</span>
+                                    </a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="header-menu-link-a">
+                                        <img alt="alt" src="img/zap4asti-1.png">
+                                        <span class="catalog-item">Запчасти для сервопривода</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mobile-header-submenu-case" data-name="contacts">
+                            <div class="mobile-menu-back-button" data-name="contacts">Назад</div>
+                            <ul class="mobile-header-submenu-list">
+                                <li class="mobile-header-submenu-link">
+                                    <a class="tel-number" href="tel:+380680000000">+38 068 000 00 00</a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="tel-number" href="tel:+380680000000">+38 068 000 00 00</a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="tel-number" href="tel:+380680000000">+38 068 000 00 00</a>
+                                </li>
+                                <li class="mobile-header-submenu-link">
+                                    <a class="tel-number" href="tel:+380680000000">+38 068 000 00 00</a>
+                                    </li>
+                            </ul>
+                        </div>
+                        <ul class="mobile-menu-list">
+                            <li class="mobile-menu-list-li" data-name="menu"><a>Меню</a></li>
+                            <li class="mobile-menu-list-li" data-name="catalog"><a>Каталог</a></li>
+                            <li class="mobile-menu-list-li" data-name="contacts"><a>Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile-equal-like-basket">
+                    <div class="mobile-equal-like-basket-in">
+                        <a class="a-equal-like-basket" href="#">
+                            <svg class="icon-mobile-libra">
+                                <use xlink:href="img/icons/icons.svg#mobile-libra"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="mobile-equal-like-basket-in">
+                        <a class="a-equal-like-basket" href="#">
+                            <svg class="icon-mobile-like">
+                                <use xlink:href="img/icons/icons.svg#mobile-like"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-catalog-option-div-mobile" data-name="filtr">
+            <div class="popup-catalog-option-div-mobile-wrapper">
+                <div class="popup-catalog-option-div-mobile-body">
+                    <div class="catalog-option-div-mobile">
+                        <div class="catalog-option-div-mobile-close" data-name="filtr"></div>
+                        <form>
+                            <div class="option-of-catalog">
+                                <button class="option-title-button" name="1" type="button">Бренд</button>
+                                <div class="options-div">
+                                    <div class="checkbox">
+                                        Jone
+                                        <input class="option-checkbox" type="checkbox">
+                                    </div>
+                                    <div class="checkbox">
+                                        Turbo
+                                        <input class="option-checkbox" type="checkbox">
+                                    </div>
+                                    <div class="checkbox">
+                                        E & E
+                                        <input class="option-checkbox" type="checkbox">
+                                    </div>
+                                    <div class="checkbox">
+                                        Garret
+                                        <input class="option-checkbox" type="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="option-of-catalog">
+                                <button class="option-title-button" name="2" type="button">Модель</button>
+                                <div class="options-div">
+                                    <select>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="option-of-catalog">
+                                <button class="option-title-button" name="3" type="button">Год выпуска</button>
+                                <div class="options-div">
+                                    <select>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="option-of-catalog">
+                                <button class="option-title-button" name="4" type="button">Цена</button>
+                                <div class="options-div-price">
+                                    <div class="option-variable-price">
+                                        <input class="option-input-place" id="input-price-min-mob" type="text" >
+                                    </div>
+                                    <div class="option-variable-price">
+                                        <input class="option-input-place" id="input-price-max-mob" type="text">
+                                    </div>
+                                    <button class="button-submit-options" name="5" type="button">Ок</button>
+                                </div>
+                                <div class="input-range-field">
+                                    <input id="inputSlidTwoTagsMob" type="range" min="0" max="100" step="1" value="50">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-catalog-option-div-mobile" data-name="sort">
+            <div class="popup-catalog-option-div-mobile-wrapper">
+                <div class="popup-catalog-option-div-mobile-body">
+                    <div class="catalog-option-div-mobile">
+                        <div class="catalog-option-div-mobile-close" data-name="sort"></div>
+                        <form>
+                            <div class="catalog-option-div-sort-mobile">
+                                <span class="catalog-option-div-sort-title-mobile">Сортировка</span>
+                                <ul>
+                                    <li>По названию от А до Я</li>
+                                    <li>По названию от Я до А</li>
+                                    <li>От дешевых к дорогим</li>
+                                    <li>От дорогих к дешевым</li>
+                                </ul>
+                            </div>
+                            <div class="catalog-option-div-count-of-products-mobile">
+                                <span class="catalog-option-div-count-of-products-title-mobile">Товаров на странице</span>
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                    <li>3</li>
+                                    <li>4</li>
+                                </ul>
+                            </div>
+                            <div class="div-submit-options-button">
+                                <button class="submit-options-button" type="button">Применить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+        <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+        
+
+        <script src="js/script.js"></script>
+    </body>
+    </html>
